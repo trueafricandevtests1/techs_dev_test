@@ -1,5 +1,7 @@
 Deployment
 
+
+
 Build the docker image called trueafrican
 docker build -t trueafrican .
 
