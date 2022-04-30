@@ -1,0 +1,22 @@
+[
+  {
+    "postcode": "10224",
+    "recipe": "Tomato",
+    "delivery": "Wednesday 1AM - 7PM"
+  },
+  {
+    "postcode": "10208",
+    "recipe": "Tomato",
+    "delivery": "Thursday 7AM - 5PM"
+  },
+  {
+    "postcode": "10120",
+    "recipe": "Veg",
+    "delivery": "Thursday 7AM - 9PM"
+  },
+  {
+    "postcode": "10186",
+    "recipe": "Veg",
+    "delivery": "Saturday 1AM - 8PM"
+  }
+]
