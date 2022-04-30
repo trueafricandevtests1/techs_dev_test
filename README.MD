@@ -103,7 +103,7 @@ __General criteria from most important to less important__:
 
 
 ## SET UP
-set up virtual environment. e.g venv
+create a virtual environment. e.g venv
 install from requirement.txt file 
 
 RUN app:  python run.py 
