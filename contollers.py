@@ -41,7 +41,7 @@ class StatsClass(object):
         nee_result = sorted(results, key=lambda d: d['recipe']) 
         for d in nee_result:
             counter[d['recipe'] ] +=d['count']
-        data=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
+        data=[{ 'count': count,'recipe': recipe} for  count,recipe in counter.items()]                
 
         return {"count_per_recipe":data}
 
