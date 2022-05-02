@@ -19,9 +19,20 @@ def uniq_recipes():
     data = filtered.uniq_recipe_element()
     return data
 
+@api_bp.route("/busiest-postcode")
+def postal_deliveries():
+    filtered = StatsClass(data_input)
+    data = filtered.postal_deliveries()
+    return data
+
 @api_bp.route("/recipe-occurrence")
 def recipe_occurrence():
     filtered = StatsClass(data_input)
-    print(filtered)
     data = filtered.occurrence_of_recipes()
+    return data
+
+@api_bp.route("/recipe-match-name")
+def recipe_match_by_name():
+    filtered = StatsClass(data_input)
+    data = filtered.recipe_match_by_name()
     return data
