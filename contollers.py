@@ -43,7 +43,7 @@ class StatsClass(object):
             counter[d['recipe'] ] +=d['count']
         data=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
 
-        return data
+        return {"count_per_recipe":data}
 
 
 
