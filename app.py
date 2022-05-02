@@ -13,6 +13,11 @@ data_import = open('data.json')
 data_input = json.load(data_import)
 
 
+@api_bp.route("/")
+def base_route():
+    filtered = StatsClass(data_input)
+    data = filtered.uniq_recipe_element()
+    return data
 @api_bp.route("/uniq-recipes")
 def uniq_recipes():
     filtered = StatsClass(data_input)
