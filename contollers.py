@@ -1,6 +1,7 @@
 
 import json
 import pandas as pd
+from collections import defaultdict
 
 
 class StatsClass(object):
@@ -26,3 +27,22 @@ class StatsClass(object):
     def postal(self):
         data = self.data
         print('here')
+    def occurrence_of_recipes(self):
+        
+            data = self.data
+            results =[ ]
+            key = 'recipe'
+            for line in data:
+                tracked_key = line[key]
+                results.append({'recipe':tracked_key, 'count':1})
+
+            counter = defaultdict(int)
+            for d in results:
+                counter[d['recipe'] ] +=d['count']
+            result=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
+
+            return result
+
+
+
+    

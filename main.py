@@ -1,8 +1,10 @@
 from itertools import count
 import json
+from collections import defaultdict
+
 
 # import data
-data_import = open('data.json')
+data_import = open('x.json')
 data = json.load(data_import)
 
 
@@ -29,36 +31,27 @@ class stats_class(object):
         data = self.data
 
     def occurrence_of_recipes(self):
+     
         data = self.data
-        finalList = []
+        results =[ ]
+        key = 'recipe'
+        for line in data:
+            tracked_key = line[key]
+            results.append({'recipe':tracked_key, 'count':1})
 
-        for i in range(len(data)):
-            if i == 0:
-                recipe_count = {'delivery': data[i]['delivery'],
-                                'recipe': data[i]['recipe'], 'postcode': data[i]['postcode'], 'count': 1}
-                finalList.append(recipe_count)
+        counter = defaultdict(int)
 
-            elif i != 0:
-                '''
-                and [lst['count'] + 1 for lst in finalList if lst['recipe']
-                           == data[i]['recipe']]:
-                print(i)
-                '''
+        print(results)
+        for d in results:
+            counter[d['recipe'] ] +=d['count']
+        data=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
 
-                for v in range(len(finalList)):
-                    if finalList[v]['recipe'] != data[i]['recipe']:
-                        recipe_count = {'delivery': data[i]['delivery'],
-                                        'recipe': data[i]['recipe'], 'postcode': data[i]['postcode'], 'count': 1}
-                        finalList.append(recipe_count)
-                for v in range(len(finalList)):
-                    if finalList[v]['recipe'] == data[i]['recipe']:
-                        finalList[v]['count'] = finalList[v]['count']+1
-                i = +1
-        print(finalList)
+        return data
 
 
 # call the class
 stats = stats_class(data)
 print(stats.uniq_recipe_element()
       )
+
 print(stats.occurrence_of_recipes())
