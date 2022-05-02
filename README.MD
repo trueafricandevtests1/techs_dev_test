@@ -103,10 +103,16 @@ __General criteria from most important to less important__:
 
 
 ## SET UP
-create a virtual environment. e.g venv
-install from requirement.txt file 
+__create a virtual environment__ 
+e.g venv
+
+install from requirement.txt file using 
+ pip install -r requirements.txt
 
 RUN app:  python run.py 
 
 Routes:
-/api/uniq_recipes
+/api//uniq-recipes
+/api/recipe-occurrence
+/api/recipe-match-name
+/api//busiest-postcode
