@@ -5,7 +5,7 @@ from unittest import result
 
 
 # import data
-data_import = open('x.json')
+data_import = open('data.json')
 data = json.load(data_import)
 
 
