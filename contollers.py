@@ -28,20 +28,23 @@ class StatsClass(object):
         data = self.data
         print('here')
     def occurrence_of_recipes(self):
-        
-            data = self.data
-            results =[ ]
-            key = 'recipe'
-            for line in data:
-                tracked_key = line[key]
-                results.append({'recipe':tracked_key, 'count':1})
+         
+        data = self.data
+        results =[ ]
+        key = 'recipe'
+        for line in data:
+            tracked_key = line[key]
+            results.append({'recipe':tracked_key, 'count':1})
 
-            counter = defaultdict(int)
-            for d in results:
-                counter[d['recipe'] ] +=d['count']
-            result=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
+        counter = defaultdict(int)
 
-            return result
+        nee_result = sorted(results, key=lambda d: d['recipe']) 
+        for d in nee_result:
+            counter[d['recipe'] ] +=d['count']
+        data=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
+
+        return data
+
 
 
 

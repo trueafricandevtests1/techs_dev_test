@@ -1,6 +1,7 @@
 from itertools import count
 import json
 from collections import defaultdict
+from unittest import result
 
 
 # import data
@@ -41,8 +42,8 @@ class stats_class(object):
 
         counter = defaultdict(int)
 
-        print(results)
-        for d in results:
+        nee_result = sorted(results, key=lambda d: d['recipe']) 
+        for d in nee_result:
             counter[d['recipe'] ] +=d['count']
         data=[{'recipe': recipe, 'count': count} for recipe, count in counter.items()]                
 
