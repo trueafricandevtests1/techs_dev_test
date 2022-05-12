@@ -99,3 +99,24 @@ __General criteria from most important to less important__:
 5. Supporting notes on taken decisions and further clarifications are welcome.
 6. Avoid use of web frameworks. 
 7. Avoid use of scripting langauges for example JAVASCRIPT.
+
+
+
+## SET UP
+__create a virtual environment__ 
+e.g venv
+
+install from requirement.txt file using 
+ pip install -r requirements.txt
+
+RUN app:  python run.py 
+
+Routes:
+
+/api/uniq-recipes
+
+/api/recipe-occurrence
+
+/api/recipe-match-name
+
+/api/busiest-postcode
