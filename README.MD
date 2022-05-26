@@ -5,11 +5,11 @@ In the given assignment we suggest you to process an automatically generated JSO
 
 Instructions
 -----
-
-1. Clone this repository.
-2. Create a new branch called `<name>_true_dev`.
-3. Create a pull request from your `true_dev` branch to the master branch.
-4. Reply to the thread you're having with our HR department telling them we can start reviewing your code
+1. Folk the this repository.
+2. Clone.
+3. Create a new branch called `<name>_true_dev`.
+4. Create a pull request from your `true_dev` branch to the master branch.
+5. Reply to the thread you're having with our HR department telling them we can start reviewing your code
 
 Given
 -----
