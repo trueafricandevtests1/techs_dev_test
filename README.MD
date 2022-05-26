@@ -1,7 +1,7 @@
 Small Stats API
 ====
 
-In the given assignment we suggest you to process an automatically generated JSON file with some data and calculated some stats. Please ensure that you instructions. 
+In the given assignment we suggest you to process an automatically generated JSON file with some data and calculated some stats. Please ensure that you read, understand and follow instructions. 
 
 Instructions
 -----
