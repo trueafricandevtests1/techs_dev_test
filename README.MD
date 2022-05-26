@@ -1,7 +1,7 @@
 Small Stats API
 ====
 
-In the given assignment we suggest you to process an automatically generated JSON file with some data and calculated some stats.
+In the given assignment we suggest you to process an automatically generated JSON file with some data and calculated some stats. Please ensure that you instructions. 
 
 Instructions
 -----
@@ -30,9 +30,9 @@ Functional Requirements
 Non-functional Requirements
 --------
 
-1. The application is packaged with [Docker](https://www.docker.com/).
-2. Setup scripts are provided.
-3. The submission is provided web `API`. Functional requirements are presented querable endpoints. 
+1. The application is packaged with [Docker](https://www.docker.com/). (important)
+2. Setup scripts are provided. (important)
+3. The submission is provided web `API`. Functional requirements are presented querable endpoints. (important)
 4. It should be possible to (implementation is up to you):  
     a. provide a custom fixtures file as input  
     b. provide custom recipe names to search by (functional reqs. 4)  
